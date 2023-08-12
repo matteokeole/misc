@@ -1,0 +1,40 @@
+/** Watch screen **/
+
+.screen {
+	display: flex;
+	flex-direction: column;
+	width: 40mm;
+	height: 44mm;
+	border-radius: 20px;
+	background: url(../images/memoji.png) center bottom no-repeat, radial-gradient(#998a29, transparent 64%), rgba(255, 255, 255, 0.01);
+	background-size: 100%;
+	-webkit-filter: brightness(0);
+	filter: brightness(0);
+	transition-duration: 1s
+}
+
+/* Date and meteo */
+
+.info-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-grow: 1;
+	margin: 4px 0;
+	font-family: "SF Rounded Medium";
+	font-size: 12px;
+	text-align: center;
+	text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+	z-index: 1
+}
+
+.time {
+	margin-top: -4px;
+	font-size: 30px
+}
+
+.meteo {
+	display: flex;
+	align-items: flex-end;
+	flex-grow: 1
+}

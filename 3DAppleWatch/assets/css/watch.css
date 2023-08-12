@@ -1,0 +1,23 @@
+/** 3D Apple Watch **/
+
+/* Watch container */
+.object-container {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	-webkit-perspective: 600px;
+	perspective: 600px
+}
+
+/* Watch */
+.object {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 48mm;
+	height: 52mm;
+	background-color: #000;
+	border-radius: 28px;
+	backface-visibility: hidden
+}

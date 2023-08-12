@@ -1,0 +1,36 @@
+/** Title **/
+
+header {
+	display: flex;
+	flex-direction: column;
+	padding: 20px
+}
+
+h1 {
+	margin: 0;
+	font-family: "SF Semibold";
+	font-size: 28px;
+	letter-spacing: 0.5px
+}
+
+p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	opacity: 0.5;
+	font-size: 16px
+}
+
+p ion-icon {
+	margin: 0 5px;
+	position: relative;
+}
+p ion-icon:first-of-type {
+	-webkit-animation: slideLeft 2s infinite;
+	animation: slideLeft 2s infinite
+}
+p ion-icon:last-of-type {
+	-webkit-animation: slideRight 2s infinite;
+	animation: slideRight 2s infinite
+}

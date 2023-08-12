@@ -1,0 +1,33 @@
+/** Neck **/
+
+#neck_1 {
+	width: 15px;
+	height: 50px;
+	background-color: var(--neck);
+	-webkit-transform: rotateX(70deg);
+	transform: rotateX(70deg)
+}
+
+#neck_2 {
+	width: 15px;
+	height: 50px;
+	background-color: var(--neck);
+	-webkit-transform: translateY(-27px) translateZ(-49px) rotateX(55deg);
+	transform: translateY(-27px) translateZ(-49px) rotateX(55deg)
+}
+
+#neck_3 {
+	width: 15px;
+	height: 50px;
+	background-color: var(--neck);
+	-webkit-transform: translateY(-65px) translateZ(-91px) rotateX(40deg);
+	transform: translateY(-65px) translateZ(-91px) rotateX(40deg)
+}
+
+#neck_4 {
+	width: 15px;
+	height: 50px;
+	background-color: var(--neck);
+	-webkit-transform: translateY(-112px) translateZ(-120px) rotateX(25deg);
+	transform: translateY(-112px) translateZ(-120px) rotateX(25deg)
+}

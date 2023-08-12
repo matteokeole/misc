@@ -1,0 +1,17 @@
+/** Beak **/
+
+#beak_top {
+	width: 10px;
+	height: 125px;
+	background-color: var(--beak);
+	-webkit-transform: translateY(40px) translateZ(25px) rotateX(-5deg);
+	transform: translateY(40px) translateZ(25px) rotateX(-5deg)
+}
+
+#beak_bottom {
+	width: 10px;
+	height: 125px;
+	background-color: var(--beak);
+	-webkit-transform: translateY(40px) translateZ(15px) rotateX(-10deg);
+	transform: translateY(40px) translateZ(15px) rotateX(-10deg)
+}

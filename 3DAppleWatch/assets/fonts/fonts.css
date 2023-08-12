@@ -1,0 +1,14 @@
+/** Fonts import **/
+
+@font-face {
+	font-family: "SF Rounded Medium";
+	src: url(SF-Pro-Rounded-Medium.otf) format("opentype")
+}
+@font-face {
+	font-family: "SF Regular";
+	src: url(SF-Pro-Display-Regular.otf) format("opentype")
+}
+@font-face {
+	font-family: "SF Semibold";
+	src: url(SF-Pro-Display-Semibold.otf) format("opentype")
+}

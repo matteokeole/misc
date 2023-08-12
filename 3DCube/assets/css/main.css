@@ -1,0 +1,96 @@
+/* Perspective and background */
+body {
+	-webkit-perspective: 500px;
+	perspective: 500px;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	overflow: hidden;
+	background-color: #000;
+	cursor: pointer;
+	user-select: none;
+	font-family: monospace
+}
+body:active {cursor: grab}
+
+/* Cube and faces */
+
+#cube {
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	color: transparent;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d
+}
+
+#cube .face {
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
+	position: absolute;
+	background: url(../images/texture.png) center no-repeat;
+	background-size: 100%;
+	text-align: center;
+	font-size: 20px
+}
+.face#front {
+	-webkit-transform: translateZ(100px);
+	-ms-transform: translateZ(100px);
+	transform: translateZ(100px)
+}
+.face#back {
+	-webkit-transform: translateZ(-100px) rotateY(180deg);
+	-ms-transform: translateZ(-100px) rotateY(180deg);
+	transform: translateZ(-100px) rotateY(180deg)
+}
+.face#left {
+	-webkit-transform: translateX(100px) rotateY(90deg);
+	-ms-transform: translateX(100px) rotateY(90deg);
+	transform: translateX(100px) rotateY(90deg)
+}
+.face#right {
+	-webkit-transform: translateX(-100px) rotateY(-90deg);
+	-ms-transform: translateX(-100px) rotateY(-90deg);
+	transform: translateX(-100px) rotateY(-90deg)
+}
+.face#top {
+	-webkit-transform: translateY(-100px) rotateX(90deg);
+	-ms-transform: translateY(-100px) rotateX(90deg);
+	transform: translateY(-100px) rotateX(90deg)
+}
+.face#bottom {
+	-webkit-transform: translateY(100px) rotateX(-90deg);
+	-ms-transform: translateY(100px) rotateX(-90deg);
+	transform: translateY(100px) rotateX(-90deg)
+}
+
+/* Face names toggling button */
+#btn-toggle-faces {
+	height: 30px;
+	margin-top: 10px;
+	padding: 0 10px;
+	border: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	cursor: pointer;
+	font-family: monospace;
+	z-index: 1
+}
+#btn-toggle-faces:hover {opacity: 0.5}
+#btn-toggle-faces:active {
+	opacity: 0.5;
+	-webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9)
+}

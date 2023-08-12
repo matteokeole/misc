@@ -1,0 +1,33 @@
+/** Legs **/
+
+#leg_left_1 {
+	width: 15px;
+	height: 75px;
+	background-color: var(--leg);
+	-webkit-transform: translateX(20px) translateY(-360px) translateZ(-225px) rotateX(110deg) rotateZ(15deg);
+	transform: translateX(20px) translateY(-360px) translateZ(-225px) rotateX(110deg) rotateZ(15deg)
+}
+
+#leg_left_2 {
+	width: 15px;
+	height: 75px;
+	background-color: var(--leg);
+	-webkit-transform: translateX(30px) translateY(-380px) translateZ(-260px);
+	transform: translateX(30px) translateY(-380px) translateZ(-260px)
+}
+
+#leg_right_1 {
+	width: 15px;
+	height: 75px;
+	background-color: var(--leg);
+	transform: translateX(-20px) translateY(-360px) translateZ(-225px) rotateX(110deg) rotateZ(-15deg);
+	-webkit-transform: translateX(-20px) translateY(-360px) translateZ(-225px) rotateX(110deg) rotateZ(-15deg)
+}
+
+#leg_right_2 {
+	width: 15px;
+	height: 75px;
+	background-color: var(--leg);
+	-webkit-transform: translateX(-30px) translateY(-380px) translateZ(-260px);
+	transform: translateX(-30px) translateY(-380px) translateZ(-260px)
+}

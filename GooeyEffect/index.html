@@ -1,0 +1,62 @@
+<!--
+	A simple gooey animation made with CSS and vanilla JS.
+	GitHub repository: https://github.com/matteoo34/GooeyEffect
+	Made by Mattéo Legagneux
+	Original made by Online Tutorials (https://youtu.be/oMBmZDI7QsM)
+	Copyright (C) 2021
+-->
+
+<!DOCTYPE html>
+
+<html prefix="og: http://ogp.me/ns#" lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="A simple gooey animation made with CSS and vanilla JS.">
+		<meta name="keywords" content="gooey, effect, animation, html, css, javascript, js, vanilla, mattéo, legagneux">
+		<meta name="author" content="Online Tutorials, Mattéo Legagneux">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://matteoo34.github.io/GooeyEffect">
+		<meta property="og:site_name" content="matteoo34's GitHub">
+		<meta property="og:title" content="Gooey Effect with vanilla JavaScript">
+		<meta property="og:description" content="A simple gooey animation made with CSS and vanilla JS.">
+		<meta property="og:image" content="https://matteoo34.github.io/GooeyEffect/banner.png">
+		<meta name="twitter:card" content="summary_large_image">
+		<style>
+			body {
+				height: 100vh;
+				margin: 0;
+				overflow: hidden
+			}
+
+			.gooey {
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				position: absolute;
+				background-color: #000;
+				-webkit-filter: contrast(100);
+				filter: contrast(100)
+			}
+
+			.bubble {
+				position: absolute;
+				border-radius: 50%;
+				background-color: #fff;
+				-webkit-filter: blur(25px);
+				filter: blur(25px);
+				transition-duration: 2s
+			}
+		</style>
+		<title>Gooey Effect with vanilla JavaScript</title>
+	</head>
+
+	<body>
+		<div class="gooey"></div>
+		<script src="main.js"></script>
+	</body>
+
+</html>

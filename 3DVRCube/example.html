@@ -1,0 +1,46 @@
+<div class="garden">
+	<div class="ball"></div>
+</div>
+<style>
+	body {margin: 0}
+
+	/* Ball container */
+	.garden {
+		width: 200px;
+		height: 200px;
+		position: relative;
+		background-color: #ddd
+	}
+
+	/* Moving ball */
+	.ball {
+		width: 30px;
+		height: 30px;
+		top: 85px;
+		left: 85px;
+		position: absolute;
+		border-radius: 50%;
+		background-color: #ff9800
+	}
+</style>
+<script>
+	const garden = document.querySelector(".garden"),
+		ball = garden.querySelector(".ball"),
+		maxX = garden.clientWidth - ball.clientWidth,
+		maxY = garden.clientHeight - ball.clientHeight,
+		animate = e => {
+			let x = e.beta, // In degree in range [-180, 180]
+				y = e.gamma; // In degree in range [-90, 90]
+			// Because we don't want to have the device upside down, we constrain the X value to the range [-90, 90]
+			if (x > 90) x = 90;
+			if (x < -90) x = -90;
+			// To make computation easier we shift the range of X and Y to [0, 180]
+			x += 90;
+			y += 90;
+			// 15 is half the size of the ball
+			// It center the positioning point to the center of the ball
+			ball.style.top = `${(maxY * x / 180 - 15)}px`;
+			ball.style.left = `${(maxX * y / 180 - 15)}px`
+		};
+	if (DeviceOrientationEvent) addEventListener("deviceorientation", animate)
+</script>
