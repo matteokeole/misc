@@ -1,0 +1,43 @@
+@import url(keyframes.css);
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #cbfada;
+}
+
+/* Play sound button */
+button {
+	width: 200px;
+	height: 200px;
+	border: none;
+	border-radius: 50%;
+	background-color: #ed1c24;
+	color: #fff;
+	cursor: pointer;
+	font-family: Consolas, monospace;
+	font-size: 20px;
+	transition-duration: .2s;
+}
+button:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, .4);
+	-webkit-filter: brightness(1.1);
+	filter: brightness(1.1);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+button:active {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, .4);
+	-webkit-filter: brightness(.9);
+	filter: brightness(.9);
+	-webkit-transform: scale(.95);
+	transform: scale(.95);
+	transition-duration: .1s;
+}
+button.shaking {
+	-webkit-animation: shake 0.6s;
+	animation: shake 0.6s;
+}

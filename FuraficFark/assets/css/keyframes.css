@@ -1,0 +1,23 @@
+/* Shaking button animation */
+@-webkit-keyframes shake {
+	10% {-webkit-transform: translateX(10px)}
+	20% {-webkit-transform: translateX(-10px)}
+	30% {-webkit-transform: translateX(10px)}
+	40% {-webkit-transform: translateX(-10px)}
+	50% {-webkit-transform: translateX(10px)}
+	60% {-webkit-transform: translateX(-10px)}
+	70% {-webkit-transform: translateX(10px)}
+	80% {-webkit-transform: translateX(-10px)}
+	90% {-webkit-transform: translateX(10px)}
+}
+@keyframes shake {
+	10% {transform: translateX(10px)}
+	20% {transform: translateX(-10px)}
+	30% {transform: translateX(10px)}
+	40% {transform: translateX(-10px)}
+	50% {transform: translateX(10px)}
+	60% {transform: translateX(-10px)}
+	70% {transform: translateX(10px)}
+	80% {transform: translateX(-10px)}
+	90% {transform: translateX(10px)}
+}
