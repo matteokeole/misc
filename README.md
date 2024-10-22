@@ -1,3 +1,3 @@
 # misc
 
-Random projects of mine that are too small to have their own repository.
+Random projects that are too small to have their own repository.
