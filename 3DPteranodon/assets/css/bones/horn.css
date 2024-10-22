@@ -1,9 +1,0 @@
-/* Horn */
-
-#horn {
-	width: 20px;
-	height: 150px;
-	background-color: var(--horn);
-	-webkit-transform: translateY(-110px) translateZ(70px) rotateX(-25deg);
-	transform: translateY(-110px) translateZ(70px) rotateX(-25deg)
-}
